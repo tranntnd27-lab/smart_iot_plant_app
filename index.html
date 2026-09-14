@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>LoRa Project</title>
+
+    <!-- Futuristic Fonts (Orbitron & Space Grotesk) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-img">
+          <img
+            src="./img/logoute.png"
+            alt="header-img"
+            height="50px"
+          />
+        </div>
+
+        <div class="header-text">
+          <strong>HỆ THỐNG CHĂM SÓC CÂY TRỒNG THÔNG MINH</strong>
+        </div>
+
+        <div class="header-left">
+          <label>
+            <input type="checkbox" />
+            <span class="check"></span>
+          </label>
+        </div>
+
+        <div class="header-right">
+          <img
+            src="./img/qa.png"
+            alt="header-img"
+            height="50px"
+          />
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">home</span>
+            <span class="brand_name">SMART CROP CARE SYSTEM</span>
+          </div>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item active">
+            <a href="./index.html">
+              <span class="material-icons-outlined">dashboard</span> Dashboard
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="./control.html">
+              <span class="material-icons-outlined">settings</span> Điều khiển
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="./app_android.html">
+              <span class="material-icons-outlined">phone_android</span> App Android (MQTT)
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <p class="font-weight-bold">
+            DASHBOARD GIÁM SÁT CÂY TRỒNG
+          </p>
+          <a
+            href="https://docs.google.com/spreadsheets/d/1bfctEnviJxUOP1Q-9QpJ-qnpMO_zC_Rn-Pwgxvzy2vU/edit#gid=0"
+            target="_blank"
+            id="ggSheets"
+          >
+            LỊCH SỬ DỮ LIỆU (SHEETS)
+          </a>
+          <div id="time">
+            <script>
+              function dongho() {
+                var time = new Date();
+                var gio = time.getHours();
+                var phut = time.getMinutes();
+                var giay = time.getSeconds();
+                if (gio < 10) gio = "0" + gio;
+                if (phut < 10) phut = "0" + phut;
+                if (giay < 10) giay = "0" + giay;
+                document.getElementById("time").innerHTML =
+                  gio + ":" + phut + ":" + giay;
+                setTimeout("dongho()", 1000);
+              }
+              dongho();
+            </script>
+          </div>
+        </div>
+
+        <div class="main-cards">
+          <!-- Card 1: Nhiệt độ -->
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Nhiệt độ không khí</p>
+              <span class="material-symbols-outlined text-red">
+                device_thermostat
+              </span>
+            </div>
+            <span class="font-weight-bold"><span id="tempt">--</span> °C</span>
+          </div>
+
+          <!-- Card 2: Độ ẩm không khí -->
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Độ ẩm không khí</p>
+              <span class="material-symbols-outlined text-orange">
+                humidity_mid
+              </span>
+            </div>
+            <span class="font-weight-bold"><span id="humi">--</span> %</span>
+          </div>
+
+          <!-- Card 3: Độ ẩm đất -->
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Độ ẩm đất</p>
+              <span class="material-symbols-outlined text-teal">
+                water_drop
+              </span>
+            </div>
+            <span class="font-weight-bold"><span id="soil">--</span> %</span>
+          </div>
+
+          <!-- Card 4: Ánh sáng -->
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Cường độ sáng</p>
+              <span class="material-symbols-outlined text-yellow">
+                sunny
+              </span>
+            </div>
+            <span class="font-weight-bold"><span id="light">--</span> %</span>
+          </div>
+        </div>
+
+
+        <!-- Biểu đồ -->
+        <div class="charts">
+          <div class="charts-card">
+            <p class="chart-title">Độ ẩm đất & Ánh sáng</p>
+            <div id="bar-chart"></div>
+          </div>
+
+          <div class="charts-card">
+            <p class="chart-title">Nhiệt độ & Độ ẩm không khí</p>
+            <div id="area-chart"></div>
+          </div>
+        </div>
+        <div class="end">
+          <p>Hệ thống giám sát và điều khiển nông nghiệp thông minh - UTE</p>
+        </div>
+      </main>
+      <!-- End Main -->
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+
+    <!-- Firebase SDK Modular with Compatibility Wrapper -->
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-analytics.js";
+      import { getDatabase, ref, set, onValue, get } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-database.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyBwSEkfbFB7gvV7N0T9UQ0FekHco_npE84",
+        authDomain: "chamsoccaytrong-cf669.firebaseapp.com",
+        databaseURL: "https://chamsoccaytrong-cf669-default-rtdb.firebaseio.com",
+        projectId: "chamsoccaytrong-cf669",
+        storageBucket: "chamsoccaytrong-cf669.firebasestorage.app",
+        messagingSenderId: "927477809579",
+        appId: "1:927477809579:web:9b9b622443c9a48308d2ee",
+        measurementId: "G-1R8K4CFKLQ"
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      const db = getDatabase(app);
+
+      // Expose a minimal v8 compatibility layer
+      window.firebase = {
+        analytics: () => analytics,
+        database: () => ({
+          ref: (path) => ({
+            set: (value) => set(ref(db, path), value),
+            on: (eventType, callback) => {
+              if (eventType === 'value') {
+                return onValue(ref(db, path), (snapshot) => {
+                  callback({
+                    val: () => snapshot.val()
+                  });
+                });
+              }
+            },
+            once: (eventType, callback) => {
+              if (eventType === 'value') {
+                const promise = get(ref(db, path)).then((snapshot) => {
+                  const snapWrapper = {
+                    val: () => snapshot.val()
+                  };
+                  if (callback) callback(snapWrapper);
+                  return snapWrapper;
+                });
+                return promise;
+              }
+            }
+          })
+        })
+      };
+    </script>
+    <!-- Custom JS (Loaded with defer to execute after Firebase module is ready) -->
+    <script defer src="./js/scr_station1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+.pio/
+.cache/
+.codegraph/
+.qodo/
+.sixth/
+.vscode/
+compile_commands.json
+~

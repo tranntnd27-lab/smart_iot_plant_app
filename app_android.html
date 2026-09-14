@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Smart Plant - Ứng Dụng Android (MQTT)</title>
+
+    <!-- Google Fonts & Material Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <style>
+      :root {
+        --primary: #10b981;
+        --primary-dark: #059669;
+        --bg-dark: #0f172a;
+        --card-bg: #1e293b;
+        --card-hover: #334155;
+        --text-light: #f8fafc;
+        --text-sub: #94a3b8;
+        --red: #ef4444;
+        --red-dark: #dc2626;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      body {
+        background-color: #020617;
+        color: var(--text-light);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 12px;
+      }
+
+      /* Phone Frame Mockup */
+      .phone-container {
+        width: 100%;
+        max-width: 410px;
+        height: 840px;
+        background-color: var(--bg-dark);
+        border-radius: 40px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 0 10px #1e293b;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+      }
+
+      /* Top Phone Notch / Bar */
+      .phone-notch {
+        height: 28px;
+        background-color: #0f172a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 6px;
+      }
+      .notch-pill {
+        width: 110px;
+        height: 18px;
+        background-color: #020617;
+        border-radius: 20px;
+      }
+
+      /* App Header */
+      .app-header {
+        padding: 16px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(30, 41, 59, 0.5);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .header-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .header-title .material-symbols-outlined {
+        color: var(--primary);
+        font-size: 30px;
+      }
+      .header-title h1 {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+      }
+
+      /* Status Badge */
+      .status-badge {
+        font-size: 11px;
+        font-weight: 600;
+        padding: 4px 10px;
+        border-radius: 20px;
+        background-color: rgba(16, 185, 129, 0.15);
+        color: var(--primary);
+        border: 1px solid rgba(16, 185, 129, 0.3);
+      }
+
+      /* App Body Scrollable */
+      .app-content {
+        flex: 1;
+        overflow-y: auto;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .app-content::-webkit-scrollbar {
+        width: 4px;
+      }
+      .app-content::-webkit-scrollbar-thumb {
+        background: #334155;
+        border-radius: 4px;
+      }
+
+      /* Sensors Grid (2x2) */
+      .sensors-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .sensor-card {
+        background-color: var(--card-bg);
+        border-radius: 20px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        transition: transform 0.2s ease, background 0.2s ease;
+      }
+      .sensor-card:active {
+        transform: scale(0.98);
+      }
+
+      .sensor-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .sensor-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .sensor-icon.temp { background: rgba(239, 68, 68, 0.15); color: #ef4444; }
+      .sensor-icon.hum { background: rgba(59, 130, 246, 0.15); color: #3b82f6; }
+      .sensor-icon.soil { background: rgba(16, 185, 129, 0.15); color: #10b981; }
+      .sensor-icon.light { background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+
+      .sensor-label {
+        font-size: 13px;
+        color: var(--text-sub);
+        font-weight: 500;
+      }
+      .sensor-value {
+        font-size: 22px;
+        font-weight: 800;
+        color: var(--text-light);
+      }
+
+      /* Health Status Banner */
+      .health-card {
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        border-radius: 24px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.3);
+        transition: all 0.3s ease;
+      }
+      .health-icon-box {
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+      .health-info h3 {
+        font-size: 18px;
+        font-weight: 700;
+        color: white;
+      }
+      .health-info p {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.85);
+        margin-top: 4px;
+      }
+
+      /* Control Pump Section */
+      .control-section {
+        background-color: var(--card-bg);
+        border-radius: 24px;
+        padding: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .control-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .control-header h2 {
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .pump-status-label {
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--text-sub);
+      }
+
+      .pump-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .btn-pump {
+        height: 54px;
+        border: none;
+        border-radius: 16px;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        transition: all 0.2s ease;
+      }
+
+      .btn-pump-on {
+        background-color: #064e3b;
+        color: #6ee7b7;
+        border: 1px solid rgba(16, 185, 129, 0.3);
+      }
+      .btn-pump-on.active-on {
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        color: white;
+        box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+      }
+
+      .btn-pump-off {
+        background-color: #451a1a;
+        color: #fca5a5;
+        border: 1px solid rgba(239, 68, 68, 0.3);
+      }
+      .btn-pump-off.active-off {
+        background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+        color: white;
+        box-shadow: 0 8px 20px rgba(239, 68, 68, 0.4);
+      }
+
+      .btn-pump:active {
+        transform: scale(0.96);
+      }
+
+      /* Bottom Navigation Bar */
+      .bottom-nav {
+        height: 116px;
+        padding-top: 12px;
+        padding-bottom: 48px;
+        background-color: #0f172a;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+      }
+      .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        color: var(--text-sub);
+        text-decoration: none;
+        font-size: 11px;
+        font-weight: 600;
+      }
+      .nav-item.active {
+        color: var(--primary);
+      }
+      .nav-item .material-symbols-outlined {
+        font-size: 24px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="phone-container">
+      <!-- Phone Notch -->
+      <div class="phone-notch">
+        <div class="notch-pill"></div>
+      </div>
+
+      <!-- App Header -->
+      <div class="app-header">
+        <div class="header-title">
+          <span class="material-symbols-outlined">potted_plant</span>
+          <h1>Smart Plant</h1>
+        </div>
+        <div class="status-badge" id="mqtt-status-badge">Đang kết nối...</div>
+      </div>
+
+      <!-- Main Content Area -->
+      <div class="app-content">
+        <!-- 4 Sensor Cards -->
+        <div class="sensors-grid">
+          <!-- Card 1: Nhiệt độ -->
+          <div class="sensor-card">
+            <div class="sensor-header">
+              <div class="sensor-icon temp">
+                <span class="material-symbols-outlined">thermostat</span>
+              </div>
+            </div>
+            <div class="sensor-label">Nhiệt độ</div>
+            <div class="sensor-value" id="app-temp">-- °C</div>
+          </div>
+
+          <!-- Card 2: Độ ẩm không khí -->
+          <div class="sensor-card">
+            <div class="sensor-header">
+              <div class="sensor-icon hum">
+                <span class="material-symbols-outlined">humidity_percentage</span>
+              </div>
+            </div>
+            <div class="sensor-label">Độ ẩm không khí</div>
+            <div class="sensor-value" id="app-hum">-- %</div>
+          </div>
+
+          <!-- Card 3: Độ ẩm đất -->
+          <div class="sensor-card">
+            <div class="sensor-header">
+              <div class="sensor-icon soil">
+                <span class="material-symbols-outlined">water_drop</span>
+              </div>
+            </div>
+            <div class="sensor-label">Độ ẩm đất</div>
+            <div class="sensor-value" id="app-soil">-- %</div>
+          </div>
+
+          <!-- Card 4: Ánh sáng -->
+          <div class="sensor-card">
+            <div class="sensor-header">
+              <div class="sensor-icon light">
+                <span class="material-symbols-outlined">wb_sunny</span>
+              </div>
+            </div>
+            <div class="sensor-label">Ánh sáng</div>
+            <div class="sensor-value" id="app-light">-- %</div>
+          </div>
+        </div>
+
+        <!-- Plant Health Status -->
+        <div class="health-card" id="plant-health-card">
+          <div class="health-icon-box">
+            <span class="material-symbols-outlined" id="plant-health-icon">spa</span>
+          </div>
+          <div class="health-info">
+            <h3 id="plant-health-status">Đang cập nhật...</h3>
+            <p id="plant-health-desc">Đang tải dữ liệu cảm biến từ MQTT Broker</p>
+          </div>
+        </div>
+
+        <!-- Pump Control Section -->
+        <div class="control-section">
+          <div class="control-header">
+            <h2>Điều Khiển Bơm Tưới</h2>
+            <div class="pump-status-label" id="pump-state-label">ĐANG TẮT</div>
+          </div>
+
+          <div class="pump-buttons">
+            <button class="btn-pump btn-pump-on" id="btn-pump-on" onclick="window.controlPumpMQTT(1)">
+              <span class="material-symbols-outlined">water_drop</span> Bật tưới
+            </button>
+            <button class="btn-pump btn-pump-off" id="btn-pump-off" onclick="window.controlPumpMQTT(0)">
+              <span class="material-symbols-outlined">power_settings_new</span> Tắt tưới
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Navigation -->
+      <div class="bottom-nav">
+        <a href="./app_android.html" class="nav-item active">
+          <span class="material-symbols-outlined">home</span>
+          <span>Trang chủ</span>
+        </a>
+        <a href="./index.html" class="nav-item">
+          <span class="material-symbols-outlined">analytics</span>
+          <span>Biểu đồ</span>
+        </a>
+        <a href="./control.html" class="nav-item">
+          <span class="material-symbols-outlined">tune</span>
+          <span>Điều khiển</span>
+        </a>
+        <a href="./control.html" class="nav-item">
+          <span class="material-symbols-outlined">settings</span>
+          <span>Cài đặt</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- MQTT.js Library via CDN -->
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <!-- Custom MQTT App Controller -->
+    <script src="./js/mqtt_app.js"></script>
+  </body>
+</html>

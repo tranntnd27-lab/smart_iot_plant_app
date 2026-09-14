@@ -1,0 +1,13 @@
+{
+  "name": "local-mqtt-server",
+  "version": "1.0.0",
+  "description": "Local MQTT Broker Server for ESP32 and React Native App",
+  "main": "mqtt_server.js",
+  "scripts": {
+    "start": "node mqtt_server.js"
+  },
+  "dependencies": {
+    "aedes": "^0.51.0",
+    "ws": "^8.16.0"
+  }
+}

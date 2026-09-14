@@ -1,0 +1,675 @@
+{"_e":"root:init","_t":1788669748179,"format":"v0-jsonl","version":"57.0.22"}
+{"_e":"env:mode","_t":1788669748181,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1788669748187,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1788669752019,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1788669754786,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1788669755974,"level":"warn","data":["Failed to download the latest version of React Native DevTools. Using a fallback version instead. Connect to the internet or check your network settings."]}
+{"_e":"expo:dev-tools-plugin:load","_t":1788669756299,"plugins":[]}
+{"_e":"metro:instantiate","_t":1788669763478,"atlas":false,"workers":3,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1788669797831,"id":"1","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1788669797832,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669797836,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:started","_t":1788669799087,"id":"2","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1788669799087,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669799087,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669800665,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1788669800665,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669800768,"id":"1","progress":0.04000000000000001,"total":4,"current":2}
+{"_e":"metro:bundling:progress","_t":1788669800768,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669800874,"id":"1","progress":0.04591836734693877,"total":14,"current":3}
+{"_e":"metro:bundling:progress","_t":1788669800874,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669801163,"id":"1","progress":0.08163265306122448,"total":14,"current":4}
+{"_e":"metro:bundling:progress","_t":1788669801163,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669801272,"id":"1","progress":0.08163265306122448,"total":15,"current":4}
+{"_e":"metro:bundling:progress","_t":1788669801272,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669801374,"id":"1","progress":0.08163265306122448,"total":115,"current":6}
+{"_e":"metro:bundling:progress","_t":1788669801374,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669801433,"id":"1","progress":0.08163265306122448,"total":115,"current":7}
+{"_e":"metro:bundling:progress","_t":1788669801433,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669801549,"id":"1","progress":0.08163265306122448,"total":120,"current":11}
+{"_e":"metro:bundling:progress","_t":1788669801549,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669801671,"id":"1","progress":0.08163265306122448,"total":121,"current":12}
+{"_e":"metro:bundling:progress","_t":1788669801671,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669802602,"id":"1","progress":0.08163265306122448,"total":121,"current":13}
+{"_e":"metro:bundling:progress","_t":1788669802602,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669802710,"id":"1","progress":0.08163265306122448,"total":129,"current":13}
+{"_e":"metro:bundling:progress","_t":1788669802710,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669802748,"id":"1","progress":0.08163265306122448,"total":129,"current":14}
+{"_e":"metro:bundling:progress","_t":1788669802748,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669802857,"id":"1","progress":0.08163265306122448,"total":131,"current":17}
+{"_e":"metro:bundling:progress","_t":1788669802857,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669802970,"id":"1","progress":0.08163265306122448,"total":134,"current":19}
+{"_e":"metro:bundling:progress","_t":1788669802971,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669803094,"id":"1","progress":0.08163265306122448,"total":147,"current":23}
+{"_e":"metro:bundling:progress","_t":1788669803094,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669803206,"id":"1","progress":0.08163265306122448,"total":150,"current":26}
+{"_e":"metro:bundling:progress","_t":1788669803207,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669803308,"id":"1","progress":0.08163265306122448,"total":156,"current":29}
+{"_e":"metro:bundling:progress","_t":1788669803308,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669803414,"id":"1","progress":0.08163265306122448,"total":160,"current":33}
+{"_e":"metro:bundling:progress","_t":1788669803414,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669803517,"id":"1","progress":0.08163265306122448,"total":164,"current":37}
+{"_e":"metro:bundling:progress","_t":1788669803517,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669803670,"id":"1","progress":0.08163265306122448,"total":164,"current":38}
+{"_e":"metro:bundling:progress","_t":1788669803671,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669803772,"id":"1","progress":0.08163265306122448,"total":177,"current":40}
+{"_e":"metro:bundling:progress","_t":1788669803772,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669803896,"id":"1","progress":0.08163265306122448,"total":177,"current":41}
+{"_e":"metro:bundling:progress","_t":1788669803896,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669803997,"id":"1","progress":0.08163265306122448,"total":181,"current":49}
+{"_e":"metro:bundling:progress","_t":1788669803997,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669804105,"id":"1","progress":0.08558736985061113,"total":188,"current":55}
+{"_e":"metro:bundling:progress","_t":1788669804105,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669804214,"id":"1","progress":0.1002247417994495,"total":199,"current":63}
+{"_e":"metro:bundling:progress","_t":1788669804214,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669804322,"id":"1","progress":0.1187906494485814,"total":206,"current":71}
+{"_e":"metro:bundling:progress","_t":1788669804322,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669804430,"id":"1","progress":0.14106548524322773,"total":213,"current":80}
+{"_e":"metro:bundling:progress","_t":1788669804430,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669804538,"id":"1","progress":0.14271604938271604,"total":225,"current":85}
+{"_e":"metro:bundling:progress","_t":1788669804538,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669804640,"id":"1","progress":0.15311909262759926,"total":230,"current":90}
+{"_e":"metro:bundling:progress","_t":1788669804641,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669804743,"id":"1","progress":0.1847170665459484,"total":235,"current":101}
+{"_e":"metro:bundling:progress","_t":1788669804743,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669804845,"id":"1","progress":0.2237564780220726,"total":241,"current":114}
+{"_e":"metro:bundling:progress","_t":1788669804845,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669804946,"id":"1","progress":0.2237564780220726,"total":282,"current":120}
+{"_e":"metro:bundling:progress","_t":1788669804946,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669805051,"id":"1","progress":0.2237564780220726,"total":290,"current":124}
+{"_e":"metro:bundling:progress","_t":1788669805051,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669805153,"id":"1","progress":0.2237564780220726,"total":296,"current":134}
+{"_e":"metro:bundling:progress","_t":1788669805153,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669805261,"id":"1","progress":0.2237564780220726,"total":303,"current":141}
+{"_e":"metro:bundling:progress","_t":1788669805261,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669805361,"id":"1","progress":0.2279292403746098,"total":310,"current":148}
+{"_e":"metro:bundling:progress","_t":1788669805361,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669805462,"id":"1","progress":0.2360059309974226,"total":317,"current":154}
+{"_e":"metro:bundling:progress","_t":1788669805462,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669805563,"id":"1","progress":0.25307689412473183,"total":326,"current":164}
+{"_e":"metro:bundling:progress","_t":1788669805564,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669805673,"id":"1","progress":0.25911779648715344,"total":332,"current":169}
+{"_e":"metro:bundling:progress","_t":1788669805673,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669805788,"id":"1","progress":0.25911779648715344,"total":350,"current":175}
+{"_e":"metro:bundling:progress","_t":1788669805788,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669805895,"id":"1","progress":0.26001332167018437,"total":353,"current":180}
+{"_e":"metro:bundling:progress","_t":1788669805895,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669805997,"id":"1","progress":0.26875265831521,"total":353,"current":183}
+{"_e":"metro:bundling:progress","_t":1788669805997,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669806098,"id":"1","progress":0.28901855199757914,"total":359,"current":193}
+{"_e":"metro:bundling:progress","_t":1788669806099,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669806219,"id":"1","progress":0.28901855199757914,"total":375,"current":200}
+{"_e":"metro:bundling:progress","_t":1788669806219,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669806342,"id":"1","progress":0.28901855199757914,"total":384,"current":206}
+{"_e":"metro:bundling:progress","_t":1788669806342,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669806449,"id":"1","progress":0.2995532472969172,"total":391,"current":214}
+{"_e":"metro:bundling:progress","_t":1788669806449,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669806567,"id":"1","progress":0.2995532472969172,"total":406,"current":220}
+{"_e":"metro:bundling:progress","_t":1788669806567,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669806638,"id":"1","progress":0.2995532472969172,"total":406,"current":221}
+{"_e":"metro:bundling:progress","_t":1788669806638,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669806741,"id":"1","progress":0.30302907729289946,"total":416,"current":229}
+{"_e":"metro:bundling:progress","_t":1788669806741,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669806844,"id":"1","progress":0.31624083044982704,"total":425,"current":239}
+{"_e":"metro:bundling:progress","_t":1788669806844,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669806946,"id":"1","progress":0.327675997903747,"total":428,"current":245}
+{"_e":"metro:bundling:progress","_t":1788669806946,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669807045,"id":"1","progress":0.3407178395200754,"total":442,"current":258}
+{"_e":"metro:bundling:progress","_t":1788669807045,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669807146,"id":"1","progress":0.37253976949922896,"total":444,"current":271}
+{"_e":"metro:bundling:progress","_t":1788669807146,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669807248,"id":"1","progress":0.4026272396388426,"total":446,"current":283}
+{"_e":"metro:bundling:progress","_t":1788669807248,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669807351,"id":"1","progress":0.42672752478617076,"total":447,"current":292}
+{"_e":"metro:bundling:progress","_t":1788669807351,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669807453,"id":"1","progress":0.429655320831394,"total":447,"current":293}
+{"_e":"metro:bundling:progress","_t":1788669807459,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669807512,"id":"1","progress":0.4325931264357462,"total":447,"current":294}
+{"_e":"metro:bundling:progress","_t":1788669807512,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669807614,"id":"1","progress":0.44146660060357645,"total":447,"current":297}
+{"_e":"metro:bundling:progress","_t":1788669807614,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669807715,"id":"1","progress":0.44743229784444144,"total":447,"current":299}
+{"_e":"metro:bundling:progress","_t":1788669807715,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669807819,"id":"1","progress":0.44842155612244894,"total":448,"current":300}
+{"_e":"metro:bundling:progress","_t":1788669807820,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669807920,"id":"1","progress":0.45035061815027605,"total":453,"current":304}
+{"_e":"metro:bundling:progress","_t":1788669807920,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669808042,"id":"1","progress":0.4512334593572779,"total":460,"current":309}
+{"_e":"metro:bundling:progress","_t":1788669808042,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669808142,"id":"1","progress":0.4512334593572779,"total":468,"current":311}
+{"_e":"metro:bundling:progress","_t":1788669808147,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669808258,"id":"1","progress":0.4512334593572779,"total":474,"current":315}
+{"_e":"metro:bundling:progress","_t":1788669808258,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669808366,"id":"1","progress":0.4633147376597698,"total":476,"current":324}
+{"_e":"metro:bundling:progress","_t":1788669808366,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669808466,"id":"1","progress":0.4864769437186639,"total":476,"current":332}
+{"_e":"metro:bundling:progress","_t":1788669808466,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669808576,"id":"1","progress":0.4920480646440698,"total":479,"current":336}
+{"_e":"metro:bundling:progress","_t":1788669808577,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669808685,"id":"1","progress":0.5055476074187093,"total":481,"current":342}
+{"_e":"metro:bundling:progress","_t":1788669808685,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669808790,"id":"1","progress":0.5212720166663797,"total":482,"current":348}
+{"_e":"metro:bundling:progress","_t":1788669808790,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669808890,"id":"1","progress":0.546313799621928,"total":483,"current":357}
+{"_e":"metro:bundling:progress","_t":1788669808890,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669808992,"id":"1","progress":0.5788542884472313,"total":485,"current":369}
+{"_e":"metro:bundling:progress","_t":1788669808993,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669809109,"id":"1","progress":0.5802033341491034,"total":491,"current":374}
+{"_e":"metro:bundling:progress","_t":1788669809109,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669809224,"id":"1","progress":0.5931484131113424,"total":496,"current":382}
+{"_e":"metro:bundling:progress","_t":1788669809224,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669809333,"id":"1","progress":0.6259415170723052,"total":498,"current":394}
+{"_e":"metro:bundling:progress","_t":1788669809333,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669809433,"id":"1","progress":0.6387155045886356,"total":498,"current":398}
+{"_e":"metro:bundling:progress","_t":1788669809434,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669809533,"id":"1","progress":0.6561000000000001,"total":500,"current":405}
+{"_e":"metro:bundling:progress","_t":1788669809534,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669809638,"id":"1","progress":0.668241370622323,"total":504,"current":412}
+{"_e":"metro:bundling:progress","_t":1788669809638,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669809737,"id":"1","progress":0.6856887312721648,"total":506,"current":419}
+{"_e":"metro:bundling:progress","_t":1788669809737,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669809846,"id":"1","progress":0.706526288052576,"total":508,"current":427}
+{"_e":"metro:bundling:progress","_t":1788669809846,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669809946,"id":"1","progress":0.706526288052576,"total":512,"current":429}
+{"_e":"metro:bundling:progress","_t":1788669809948,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669810070,"id":"1","progress":0.706526288052576,"total":516,"current":432}
+{"_e":"metro:bundling:progress","_t":1788669810070,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669810159,"id":"1","progress":0.706526288052576,"total":516,"current":433}
+{"_e":"metro:bundling:progress","_t":1788669810159,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669810260,"id":"1","progress":0.706526288052576,"total":535,"current":436}
+{"_e":"metro:bundling:progress","_t":1788669810261,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669810385,"id":"1","progress":0.706526288052576,"total":535,"current":437}
+{"_e":"metro:bundling:progress","_t":1788669810385,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669810485,"id":"1","progress":0.706526288052576,"total":535,"current":449}
+{"_e":"metro:bundling:progress","_t":1788669810485,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669810589,"id":"1","progress":0.732864005590008,"total":535,"current":458}
+{"_e":"metro:bundling:progress","_t":1788669810589,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669810698,"id":"1","progress":0.7378778126193976,"total":539,"current":463}
+{"_e":"metro:bundling:progress","_t":1788669810699,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669810798,"id":"1","progress":0.7543244170096021,"total":540,"current":469}
+{"_e":"metro:bundling:progress","_t":1788669810798,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669810903,"id":"1","progress":0.7543244170096021,"total":546,"current":473}
+{"_e":"metro:bundling:progress","_t":1788669810903,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669811021,"id":"1","progress":0.7608423464222921,"total":548,"current":478}
+{"_e":"metro:bundling:progress","_t":1788669811021,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669811122,"id":"1","progress":0.7687985717286284,"total":552,"current":484}
+{"_e":"metro:bundling:progress","_t":1788669811122,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669811236,"id":"1","progress":0.7794821848875902,"total":555,"current":490}
+{"_e":"metro:bundling:progress","_t":1788669811236,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669811336,"id":"1","progress":0.7794821848875902,"total":564,"current":495}
+{"_e":"metro:bundling:progress","_t":1788669811336,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669811439,"id":"1","progress":0.783506474047622,"total":566,"current":501}
+{"_e":"metro:bundling:progress","_t":1788669811439,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669811544,"id":"1","progress":0.7873437809958342,"total":568,"current":504}
+{"_e":"metro:bundling:progress","_t":1788669811544,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669811666,"id":"1","progress":0.7873437809958342,"total":574,"current":508}
+{"_e":"metro:bundling:progress","_t":1788669811666,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669811781,"id":"1","progress":0.7873437809958342,"total":582,"current":512}
+{"_e":"metro:bundling:progress","_t":1788669811781,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669811881,"id":"1","progress":0.7873437809958342,"total":587,"current":518}
+{"_e":"metro:bundling:progress","_t":1788669811881,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669811982,"id":"1","progress":0.7873437809958342,"total":592,"current":521}
+{"_e":"metro:bundling:progress","_t":1788669811982,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669812084,"id":"1","progress":0.7873437809958342,"total":599,"current":523}
+{"_e":"metro:bundling:progress","_t":1788669812084,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669812184,"id":"1","progress":0.7873437809958342,"total":604,"current":525}
+{"_e":"metro:bundling:progress","_t":1788669812184,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669812306,"id":"1","progress":0.7873437809958342,"total":612,"current":528}
+{"_e":"metro:bundling:progress","_t":1788669812306,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669812421,"id":"1","progress":0.7873437809958342,"total":617,"current":533}
+{"_e":"metro:bundling:progress","_t":1788669812421,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669812522,"id":"1","progress":0.7873437809958342,"total":618,"current":536}
+{"_e":"metro:bundling:progress","_t":1788669812522,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669812789,"id":"1","progress":0.7873437809958342,"total":618,"current":537}
+{"_e":"metro:bundling:progress","_t":1788669812806,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669812898,"id":"1","progress":0.7873437809958342,"total":620,"current":538}
+{"_e":"metro:bundling:progress","_t":1788669812898,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669812977,"id":"1","progress":0.7873437809958342,"total":620,"current":539}
+{"_e":"metro:bundling:progress","_t":1788669812977,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669813077,"id":"1","progress":0.7873437809958342,"total":624,"current":543}
+{"_e":"metro:bundling:progress","_t":1788669813078,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669813475,"id":"1","progress":0.7873437809958342,"total":627,"current":546}
+{"_e":"metro:bundling:progress","_t":1788669813475,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669813584,"id":"1","progress":0.7873437809958342,"total":635,"current":551}
+{"_e":"metro:bundling:progress","_t":1788669813585,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669813702,"id":"1","progress":0.7873437809958342,"total":636,"current":556}
+{"_e":"metro:bundling:progress","_t":1788669813703,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669813807,"id":"1","progress":0.7873437809958342,"total":639,"current":559}
+{"_e":"metro:bundling:progress","_t":1788669813807,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669813914,"id":"1","progress":0.7873437809958342,"total":643,"current":570}
+{"_e":"metro:bundling:progress","_t":1788669813914,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669814014,"id":"1","progress":0.7977863297836651,"total":646,"current":577}
+{"_e":"metro:bundling:progress","_t":1788669814014,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669814130,"id":"1","progress":0.7977863297836651,"total":655,"current":585}
+{"_e":"metro:bundling:progress","_t":1788669814130,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669814233,"id":"1","progress":0.8176776822091445,"total":658,"current":595}
+{"_e":"metro:bundling:progress","_t":1788669814233,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669814593,"id":"1","progress":0.8204284882807807,"total":658,"current":596}
+{"_e":"metro:bundling:progress","_t":1788669814593,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669814694,"id":"1","progress":0.8269457197360374,"total":662,"current":602}
+{"_e":"metro:bundling:progress","_t":1788669814694,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669814823,"id":"1","progress":0.8296953295424467,"total":662,"current":603}
+{"_e":"metro:bundling:progress","_t":1788669814823,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669814954,"id":"1","progress":0.8296953295424467,"total":667,"current":605}
+{"_e":"metro:bundling:progress","_t":1788669814955,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669815037,"id":"1","progress":0.8296953295424467,"total":667,"current":606}
+{"_e":"metro:bundling:progress","_t":1788669815037,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669815144,"id":"1","progress":0.8296953295424467,"total":668,"current":606}
+{"_e":"metro:bundling:progress","_t":1788669815144,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669815265,"id":"1","progress":0.8296953295424467,"total":671,"current":610}
+{"_e":"metro:bundling:progress","_t":1788669815265,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669815364,"id":"1","progress":0.837782522205467,"total":673,"current":616}
+{"_e":"metro:bundling:progress","_t":1788669815364,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669815467,"id":"1","progress":0.8436762688614541,"total":675,"current":620}
+{"_e":"metro:bundling:progress","_t":1788669815467,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669815568,"id":"1","progress":0.8499808043102458,"total":679,"current":626}
+{"_e":"metro:bundling:progress","_t":1788669815569,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669815675,"id":"1","progress":0.8612712151302071,"total":681,"current":632}
+{"_e":"metro:bundling:progress","_t":1788669815675,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669815776,"id":"1","progress":0.8725693424710979,"total":683,"current":638}
+{"_e":"metro:bundling:progress","_t":1788669815777,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669815882,"id":"1","progress":0.8843652819091401,"total":688,"current":647}
+{"_e":"metro:bundling:progress","_t":1788669815882,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669815995,"id":"1","progress":0.8843652819091401,"total":695,"current":652}
+{"_e":"metro:bundling:progress","_t":1788669816006,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669816096,"id":"1","progress":0.8910708977407849,"total":696,"current":657}
+{"_e":"metro:bundling:progress","_t":1788669816096,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669816197,"id":"1","progress":0.9025,"total":700,"current":665}
+{"_e":"metro:bundling:progress","_t":1788669816197,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669816304,"id":"1","progress":0.9106612244897959,"total":700,"current":668}
+{"_e":"metro:bundling:progress","_t":1788669816304,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669816421,"id":"1","progress":0.9247663513688017,"total":704,"current":677}
+{"_e":"metro:bundling:progress","_t":1788669816421,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669816522,"id":"1","progress":0.9439888946280991,"total":704,"current":684}
+{"_e":"metro:bundling:progress","_t":1788669816522,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669816623,"id":"1","progress":0.9635118651140767,"total":706,"current":693}
+{"_e":"metro:bundling:progress","_t":1788669816623,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669816723,"id":"1","progress":0.9830750587838759,"total":706,"current":700}
+{"_e":"metro:bundling:progress","_t":1788669816723,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669816829,"id":"1","progress":0.9971731462901795,"total":707,"current":706}
+{"_e":"metro:bundling:progress","_t":1788669816829,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669817273,"id":"1","progress":0.999,"total":707,"current":707}
+{"_e":"metro:bundling:progress","_t":1788669817273,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669817399,"id":"1","progress":0.999,"total":717,"current":717}
+{"_e":"metro:bundling:progress","_t":1788669817399,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669817882,"id":"1","progress":0.999,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669817882,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1788669817996,"id":"1","total":1,"ms":20164.6764}
+{"_e":"metro:bundling:progress","_t":1788669817996,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669818003,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788669818007,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1788669818067,"id":"2","total":1,"ms":18979.2962}
+{"_e":"metro:client_log","_t":1788669824847,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:client_log","_t":1788669826856,"level":"log","data":["[MQTT] Connected to HiveMQ Broker"]}
+{"_e":"metro:client_log","_t":1788669827255,"level":"log","data":["[MQTT] Subscribed to topic: plant/data"]}
+{"_e":"metro:client_log","_t":1788669831595,"level":"log","data":["[MQTT Publish] Published to plant/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788669832114,"level":"log","data":["[MQTT Publish] Published to plant/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788669832677,"level":"log","data":["[MQTT Publish] Published to plant/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788669833097,"level":"log","data":["[MQTT Publish] Published to plant/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788669833597,"level":"log","data":["[MQTT Publish] Published to plant/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788669834091,"level":"log","data":["[MQTT Publish] Published to plant/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788669834441,"level":"log","data":["[MQTT Publish] Published to plant/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788669834822,"level":"log","data":["[MQTT Publish] Published to plant/control: {\"pump\":1}"]}
+{"_e":"metro:bundling:started","_t":1788669874983,"id":"5","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1788669874983,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1788669875033,"id":"5","total":1,"ms":50.3401}
+{"_e":"metro:client_log","_t":1788669879080,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:client_log","_t":1788669884423,"level":"error","data":["[MQTT] Connection error:","[Error: connack timeout]"]}
+{"_e":"metro:client_log","_t":1788669887493,"level":"log","data":["[MQTT] Connected to HiveMQ Broker"]}
+{"_e":"metro:client_log","_t":1788669887787,"level":"log","data":["[MQTT] Subscribed to topic: plant/data"]}
+{"_e":"metro:client_log","_t":1788669906026,"level":"log","data":["[MQTT Publish] Published to plant/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788669906720,"level":"log","data":["[MQTT Publish] Published to plant/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788669933954,"level":"log","data":["[MQTT Publish] Published to plant/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788669934652,"level":"log","data":["[MQTT Publish] Published to plant/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788669934886,"level":"log","data":["[MQTT Publish] Published to plant/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788669935463,"level":"log","data":["[MQTT Publish] Published to plant/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788669936012,"level":"log","data":["[MQTT Publish] Published to plant/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788669936346,"level":"log","data":["[MQTT Publish] Published to plant/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788669936660,"level":"log","data":["[MQTT Publish] Published to plant/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788669936993,"level":"log","data":["[MQTT Publish] Published to plant/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788669937475,"level":"log","data":["[MQTT Publish] Published to plant/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788669938057,"level":"log","data":["[MQTT Publish] Published to plant/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788669938406,"level":"log","data":["[MQTT Publish] Published to plant/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788669938774,"level":"log","data":["[MQTT Publish] Published to plant/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788669939204,"level":"log","data":["[MQTT Publish] Published to plant/control: {\"pump\":0}"]}
+{"_e":"root:init","_t":1788689484074,"format":"v0-jsonl","version":"57.0.22"}
+{"_e":"env:mode","_t":1788689484114,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1788689484120,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1788689493003,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1788689503076,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1788689508367,"level":"warn","data":["Failed to download the latest version of React Native DevTools. Using a fallback version instead. Connect to the internet or check your network settings."]}
+{"_e":"expo:dev-tools-plugin:load","_t":1788689509860,"plugins":[]}
+{"_e":"metro:instantiate","_t":1788689526492,"atlas":false,"workers":3,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1788689618933,"id":"1","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1788689618934,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788689618944,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788689619053,"id":"1","progress":0.0019236688211757462,"total":114,"current":5}
+{"_e":"metro:bundling:progress","_t":1788689619154,"id":"1","progress":0.03215219976218787,"total":145,"current":26}
+{"_e":"metro:bundling:progress","_t":1788689619253,"id":"1","progress":0.10999722229236635,"total":199,"current":66}
+{"_e":"metro:bundling:progress","_t":1788689619353,"id":"1","progress":0.2998866213151928,"total":252,"current":138}
+{"_e":"metro:bundling:progress","_t":1788689619454,"id":"1","progress":0.3661625129132231,"total":352,"current":213}
+{"_e":"metro:bundling:progress","_t":1788689619557,"id":"1","progress":0.3661625129132231,"total":424,"current":247}
+{"_e":"metro:bundling:progress","_t":1788689619657,"id":"1","progress":0.5475374225066935,"total":473,"current":350}
+{"_e":"metro:bundling:progress","_t":1788689619757,"id":"1","progress":0.7270158753440045,"total":509,"current":434}
+{"_e":"metro:bundling:progress","_t":1788689619857,"id":"1","progress":0.765625,"total":576,"current":504}
+{"_e":"metro:bundling:progress","_t":1788689619957,"id":"1","progress":0.8022883811961309,"total":652,"current":584}
+{"_e":"metro:bundling:progress","_t":1788689620057,"id":"1","progress":0.9034682362612798,"total":687,"current":653}
+{"_e":"metro:bundling:progress","_t":1788689620158,"id":"1","progress":0.999,"total":717,"current":717}
+{"_e":"metro:bundling:done","_t":1788689620285,"id":"1","total":717,"ms":1350.8551}
+{"_e":"metro:client_log","_t":1788689625479,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:client_log","_t":1788689630903,"level":"error","data":["[MQTT] Connection error:","[Error: connack timeout]"]}
+{"_e":"metro:client_log","_t":1788689633749,"level":"log","data":["[MQTT] Connected to HiveMQ Broker"]}
+{"_e":"metro:client_log","_t":1788689634075,"level":"log","data":["[MQTT] Subscribed to topic: plant/data"]}
+{"_e":"root:init","_t":1788690438432,"format":"v0-jsonl","version":"57.0.22"}
+{"_e":"env:mode","_t":1788690438433,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1788690438436,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1788690438781,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1788690439278,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1788690439675,"level":"warn","data":["Failed to download the latest version of React Native DevTools. Using a fallback version instead. Connect to the internet or check your network settings."]}
+{"_e":"expo:dev-tools-plugin:load","_t":1788690439770,"plugins":[]}
+{"_e":"metro:instantiate","_t":1788690444672,"atlas":false,"workers":3,"host":"::","port":8081}
+{"_e":"root:init","_t":1788691074516,"format":"v0-jsonl","version":"57.0.22"}
+{"_e":"env:mode","_t":1788691074518,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1788691074523,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1788691074917,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1788691075515,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1788691075940,"level":"warn","data":["Failed to download the latest version of React Native DevTools. Using a fallback version instead. Connect to the internet or check your network settings."]}
+{"_e":"expo:dev-tools-plugin:load","_t":1788691076069,"plugins":[]}
+{"_e":"metro:instantiate","_t":1788691081278,"atlas":false,"workers":3,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1788691180007,"id":"2","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1788691180008,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1788691180118,"id":"2","total":1,"ms":109.7017}
+{"_e":"metro:client_log","_t":1788691184879,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:client_log","_t":1788691186153,"level":"log","data":["[MQTT] Connected to HiveMQ Broker"]}
+{"_e":"metro:client_log","_t":1788691186507,"level":"log","data":["[MQTT] Subscribed to topic: smartfarm_dung/data"]}
+{"_e":"root:init","_t":1788691965332,"format":"v0-jsonl","version":"57.0.22"}
+{"_e":"env:mode","_t":1788691965333,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1788691965339,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1788691965757,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1788691966350,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1788691966807,"level":"warn","data":["Failed to download the latest version of React Native DevTools. Using a fallback version instead. Connect to the internet or check your network settings."]}
+{"_e":"expo:dev-tools-plugin:load","_t":1788691966912,"plugins":[]}
+{"_e":"metro:instantiate","_t":1788691973281,"atlas":false,"workers":3,"host":"::","port":8081}
+{"_e":"root:init","_t":1788692210621,"format":"v0-jsonl","version":"57.0.22"}
+{"_e":"env:mode","_t":1788692210623,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1788692210626,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1788692210974,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1788692211451,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1788692211740,"level":"warn","data":["Failed to download the latest version of React Native DevTools. Using a fallback version instead. Connect to the internet or check your network settings."]}
+{"_e":"expo:dev-tools-plugin:load","_t":1788692211885,"plugins":[]}
+{"_e":"metro:instantiate","_t":1788692218719,"atlas":false,"workers":3,"host":"::","port":8081}
+{"_e":"root:init","_t":1788692728874,"format":"v0-jsonl","version":"57.0.22"}
+{"_e":"env:mode","_t":1788692728876,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1788692728881,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1788692729313,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1788692729960,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1788692730419,"level":"warn","data":["Failed to download the latest version of React Native DevTools. Using a fallback version instead. Connect to the internet or check your network settings."]}
+{"_e":"expo:dev-tools-plugin:load","_t":1788692730565,"plugins":[]}
+{"_e":"metro:instantiate","_t":1788692736434,"atlas":false,"workers":3,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1788692763374,"id":"1","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1788692763374,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788692763404,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788692763513,"id":"1","progress":0.011962890625,"total":128,"current":14}
+{"_e":"metro:bundling:progress","_t":1788692763614,"id":"1","progress":0.05748777401593652,"total":171,"current":41}
+{"_e":"metro:bundling:progress","_t":1788692763714,"id":"1","progress":0.2233260339333084,"total":237,"current":112}
+{"_e":"metro:bundling:progress","_t":1788692763814,"id":"1","progress":0.34732363086054574,"total":319,"current":188}
+{"_e":"metro:bundling:progress","_t":1788692763914,"id":"1","progress":0.3894020683214147,"total":383,"current":239}
+{"_e":"metro:bundling:progress","_t":1788692764038,"id":"1","progress":0.3894020683214147,"total":426,"current":246}
+{"_e":"metro:bundling:progress","_t":1788692764139,"id":"1","progress":0.45963803504740014,"total":472,"current":320}
+{"_e":"metro:bundling:progress","_t":1788692764237,"id":"1","progress":0.7567310773871241,"total":515,"current":448}
+{"_e":"metro:bundling:progress","_t":1788692764343,"id":"1","progress":0.7953028821700185,"total":573,"current":511}
+{"_e":"metro:bundling:progress","_t":1788692764443,"id":"1","progress":0.7977863297836651,"total":646,"current":577}
+{"_e":"metro:bundling:progress","_t":1788692764570,"id":"1","progress":0.9116630825591379,"total":686,"current":655}
+{"_e":"metro:bundling:progress","_t":1788692764678,"id":"1","progress":0.9972125449095391,"total":717,"current":716}
+{"_e":"metro:bundling:progress","_t":1788692764881,"id":"1","progress":0.999,"total":717,"current":717}
+{"_e":"metro:bundling:done","_t":1788692764988,"id":"1","total":717,"ms":1614.479}
+{"_e":"metro:client_log","_t":1788692771340,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:client_log","_t":1788692772728,"level":"log","data":["[MQTT] Connected to HiveMQ Broker"]}
+{"_e":"metro:client_log","_t":1788692773192,"level":"log","data":["[MQTT] Subscribed to topic: smartfarm_dung/data"]}
+{"_e":"metro:client_log","_t":1788692781247,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788692781738,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788692782221,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788692783164,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788692870994,"level":"log","data":["[MQTT] Connected to HiveMQ Broker"]}
+{"_e":"metro:client_log","_t":1788692871369,"level":"log","data":["[MQTT] Subscribed to topic: smartfarm_dung/data"]}
+{"_e":"metro:client_log","_t":1788692984819,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788692985214,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788692985530,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788692985715,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788692985945,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788692986031,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788692986301,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788692986479,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788692986680,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788692986915,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788692987166,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788692987324,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788692987625,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788692987898,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788692988076,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788692988490,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788692999913,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788693000461,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788693001026,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788693001612,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788693002274,"level":"warn","data":["[MQTT] Cannot publish - client disconnected"]}
+{"_e":"metro:client_log","_t":1788693002722,"level":"warn","data":["[MQTT] Cannot publish - client disconnected"]}
+{"_e":"metro:client_log","_t":1788693003276,"level":"warn","data":["[MQTT] Cannot publish - client disconnected"]}
+{"_e":"metro:client_log","_t":1788693003969,"level":"warn","data":["[MQTT] Cannot publish - client disconnected"]}
+{"_e":"metro:client_log","_t":1788693004172,"level":"log","data":["[MQTT] Connected to HiveMQ Broker"]}
+{"_e":"metro:client_log","_t":1788693004455,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788693004503,"level":"log","data":["[MQTT] Subscribed to topic: smartfarm_dung/data"]}
+{"_e":"metro:client_log","_t":1788693006712,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788693007078,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788693007348,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788693007481,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788693007634,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788693032108,"level":"error","data":["[MQTT] Connection error:","[Error: connack timeout]"]}
+{"_e":"metro:client_log","_t":1788693034863,"level":"log","data":["[MQTT] Connected to HiveMQ Broker"]}
+{"_e":"metro:client_log","_t":1788693035120,"level":"log","data":["[MQTT] Subscribed to topic: smartfarm_dung/data"]}
+{"_e":"metro:client_log","_t":1788693054283,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788693054796,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788693055229,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788693055545,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788693060133,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"led\":1}"]}
+{"_e":"metro:client_log","_t":1788693060698,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788693061712,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"led\":1}"]}
+{"_e":"metro:client_log","_t":1788693063372,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"led\":1}"]}
+{"_e":"metro:bundling:started","_t":1788693080796,"id":"5","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1788693080796,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1788693080858,"id":"5","total":1,"ms":62.3758}
+{"_e":"metro:client_log","_t":1788693091708,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:client_log","_t":1788693093266,"level":"log","data":["[MQTT] Connected to HiveMQ Broker"]}
+{"_e":"metro:client_log","_t":1788693093651,"level":"log","data":["[MQTT] Subscribed to topic: smartfarm_dung/data"]}
+{"_e":"metro:client_log","_t":1788693229564,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788693229858,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1788693230687,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1788693231835,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"root:init","_t":1788743090510,"format":"v0-jsonl","version":"57.0.22"}
+{"_e":"env:mode","_t":1788743090562,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1788743090598,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1788743103497,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1788743117279,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1788743121910,"level":"warn","data":["Failed to download the latest version of React Native DevTools. Using a fallback version instead. Connect to the internet or check your network settings."]}
+{"_e":"expo:dev-tools-plugin:load","_t":1788743124086,"plugins":[]}
+{"_e":"metro:instantiate","_t":1788743144074,"atlas":false,"workers":3,"host":"::","port":8081}
+{"_e":"root:init","_t":1788744022440,"format":"v0-jsonl","version":"57.0.22"}
+{"_e":"env:mode","_t":1788744022442,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1788744022468,"mode":"development","files":[],"env":{}}
+{"_e":"root:init","_t":1788744045259,"format":"v0-jsonl","version":"57.0.22"}
+{"_e":"env:mode","_t":1788744045260,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1788744045264,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1788744049851,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1788744057935,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1788744059587,"level":"warn","data":["Failed to download the latest version of React Native DevTools. Using a fallback version instead. Connect to the internet or check your network settings."]}
+{"_e":"expo:dev-tools-plugin:load","_t":1788744059786,"plugins":[]}
+{"_e":"metro:instantiate","_t":1788744068513,"atlas":false,"workers":3,"host":"::","port":8082}
+{"_e":"root:init","_t":1788750295132,"format":"v0-jsonl","version":"57.0.22"}
+{"_e":"env:mode","_t":1788750295153,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1788750295172,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1788750299524,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1788750306132,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1788750308685,"level":"warn","data":["Failed to download the latest version of React Native DevTools. Using a fallback version instead. Connect to the internet or check your network settings."]}
+{"_e":"expo:dev-tools-plugin:load","_t":1788750309976,"plugins":[]}
+{"_e":"metro:instantiate","_t":1788750319744,"atlas":false,"workers":3,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1788750479780,"id":"1","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1788750479781,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788750479815,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788750479950,"id":"1","progress":0.4096,"total":25,"current":16}
+{"_e":"metro:bundling:progress","_t":1788750480131,"id":"1","progress":0.4096,"total":123,"current":17}
+{"_e":"metro:bundling:progress","_t":1788750480968,"id":"1","progress":0.4096,"total":123,"current":18}
+{"_e":"metro:bundling:progress","_t":1788750481071,"id":"1","progress":0.4096,"total":142,"current":31}
+{"_e":"metro:bundling:progress","_t":1788750481171,"id":"1","progress":0.4096,"total":188,"current":62}
+{"_e":"metro:bundling:progress","_t":1788750481279,"id":"1","progress":0.4096,"total":240,"current":116}
+{"_e":"metro:bundling:progress","_t":1788750481373,"id":"1","progress":0.4096,"total":240,"current":118}
+{"_e":"metro:bundling:progress","_t":1788750481612,"id":"1","progress":0.4096,"total":240,"current":119}
+{"_e":"metro:bundling:progress","_t":1788750481714,"id":"1","progress":0.4096,"total":252,"current":134}
+{"_e":"metro:bundling:progress","_t":1788750481813,"id":"1","progress":0.4096,"total":288,"current":168}
+{"_e":"metro:bundling:progress","_t":1788750481921,"id":"1","progress":0.4096,"total":337,"current":201}
+{"_e":"metro:bundling:progress","_t":1788750482023,"id":"1","progress":0.4096,"total":382,"current":235}
+{"_e":"metro:bundling:progress","_t":1788750482126,"id":"1","progress":0.4096,"total":383,"current":237}
+{"_e":"metro:bundling:progress","_t":1788750482306,"id":"1","progress":0.4096,"total":383,"current":238}
+{"_e":"metro:bundling:progress","_t":1788750482411,"id":"1","progress":0.4096,"total":434,"current":253}
+{"_e":"metro:bundling:progress","_t":1788750482529,"id":"1","progress":0.4096,"total":444,"current":264}
+{"_e":"metro:bundling:progress","_t":1788750482628,"id":"1","progress":0.47542058517394276,"total":467,"current":322}
+{"_e":"metro:bundling:progress","_t":1788750482730,"id":"1","progress":0.5785870338902855,"total":493,"current":375}
+{"_e":"metro:bundling:progress","_t":1788750482832,"id":"1","progress":0.6944444444444445,"total":516,"current":430}
+{"_e":"metro:bundling:progress","_t":1788750482934,"id":"1","progress":0.7590105601469238,"total":528,"current":460}
+{"_e":"metro:bundling:progress","_t":1788750483039,"id":"1","progress":0.7911634349030471,"total":570,"current":507}
+{"_e":"metro:bundling:progress","_t":1788750483217,"id":"1","progress":0.7942874730686365,"total":570,"current":508}
+{"_e":"metro:bundling:progress","_t":1788750483328,"id":"1","progress":0.8047597892253059,"total":583,"current":523}
+{"_e":"metro:bundling:progress","_t":1788750483442,"id":"1","progress":0.8400227424115317,"total":599,"current":549}
+{"_e":"metro:bundling:progress","_t":1788750483553,"id":"1","progress":0.8400227424115317,"total":649,"current":575}
+{"_e":"metro:bundling:progress","_t":1788750483683,"id":"1","progress":0.8400227424115317,"total":649,"current":576}
+{"_e":"metro:bundling:progress","_t":1788750483782,"id":"1","progress":0.8672946376662906,"total":684,"current":637}
+{"_e":"metro:bundling:progress","_t":1788750483882,"id":"1","progress":0.9413128112267993,"total":705,"current":684}
+{"_e":"metro:bundling:progress","_t":1788750483982,"id":"1","progress":0.9889350782258421,"total":721,"current":717}
+{"_e":"metro:bundling:done","_t":1788750484188,"id":"1","total":721,"ms":4407.0735}
+{"_e":"metro:client_log","_t":1788750500922,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:client_log","_t":1788750508173,"level":"error","data":["[MQTT] Connection error:","[Error: connack timeout]"]}
+{"_e":"metro:client_log","_t":1788750512184,"level":"log","data":["[MQTT] Connected to HiveMQ Broker"]}
+{"_e":"metro:client_log","_t":1788750512596,"level":"log","data":["[MQTT] Subscribed to topic: smartfarm_dung/data"]}
+{"_e":"root:init","_t":1789312293113,"format":"v0-jsonl","version":"57.0.22"}
+{"_e":"env:mode","_t":1789312293175,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1789312293181,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1789312302480,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1789312313925,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1789312322886,"level":"warn","data":["Failed to download the latest version of React Native DevTools. Using a fallback version instead. Connect to the internet or check your network settings."]}
+{"_e":"expo:dev-tools-plugin:load","_t":1789312325416,"plugins":[]}
+{"_e":"metro:instantiate","_t":1789312347934,"atlas":false,"workers":3,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1789312393211,"id":"1","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1789312393213,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789312393221,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789312393327,"id":"1","progress":0.002379535990481856,"total":123,"current":6}
+{"_e":"metro:bundling:progress","_t":1789312393427,"id":"1","progress":0.055707727325334674,"total":161,"current":38}
+{"_e":"metro:bundling:progress","_t":1789312393527,"id":"1","progress":0.15420862784345613,"total":219,"current":86}
+{"_e":"metro:bundling:progress","_t":1789312393627,"id":"1","progress":0.2938990191737444,"total":273,"current":148}
+{"_e":"metro:bundling:progress","_t":1789312393727,"id":"1","progress":0.33119861040088966,"total":351,"current":202}
+{"_e":"metro:bundling:progress","_t":1789312393876,"id":"1","progress":0.37261481814431463,"total":403,"current":246}
+{"_e":"metro:bundling:progress","_t":1789312393975,"id":"1","progress":0.39161664334976687,"total":473,"current":296}
+{"_e":"metro:bundling:progress","_t":1789312394075,"id":"1","progress":0.6149044211351828,"total":505,"current":396}
+{"_e":"metro:bundling:progress","_t":1789312394176,"id":"1","progress":0.6628017854921849,"total":538,"current":438}
+{"_e":"metro:bundling:progress","_t":1789312394284,"id":"1","progress":0.7230987155326325,"total":568,"current":483}
+{"_e":"metro:bundling:progress","_t":1789312394384,"id":"1","progress":0.7446453353519472,"total":642,"current":554}
+{"_e":"metro:bundling:progress","_t":1789312394484,"id":"1","progress":0.8543463659689514,"total":687,"current":635}
+{"_e":"metro:bundling:progress","_t":1789312394584,"id":"1","progress":0.9636648291859052,"total":709,"current":696}
+{"_e":"metro:bundling:progress","_t":1789312394703,"id":"1","progress":0.999,"total":721,"current":721}
+{"_e":"metro:bundling:done","_t":1789312394868,"id":"1","total":721,"ms":1656.0916}
+{"_e":"metro:bundling:started","_t":1789312399525,"id":"2","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1789312399525,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789312399528,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789312399628,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789312399645,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789312399748,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789312399849,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789312399948,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789312400048,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789312400148,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789312400311,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1789312400380,"id":"2","total":1,"ms":854.9391}
+{"_e":"metro:client_log","_t":1789312406891,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:client_log","_t":1789312407614,"level":"log","data":["[MQTT] Connected to HiveMQ Broker"]}
+{"_e":"metro:client_log","_t":1789312407897,"level":"log","data":["[MQTT] Subscribed to topic: smartfarm_dung/data"]}
+{"_e":"metro:client_log","_t":1789312674136,"level":"error","data":["[TypeError: Cannot read property 'id' of undefined]"]}
+{"_e":"metro:client_log","_t":1789312685639,"level":"error","data":["[TypeError: Cannot read property 'id' of undefined]"]}
+{"_e":"metro:client_log","_t":1789312693760,"level":"log","data":["[MQTT] Connected to HiveMQ Broker"]}
+{"_e":"metro:client_log","_t":1789312694054,"level":"log","data":["[MQTT] Subscribed to topic: smartfarm_dung/data"]}
+{"_e":"metro:client_log","_t":1789312721349,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1789312722610,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1789312723022,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1789312724585,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1789312727068,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"led\":0}"]}
+{"_e":"metro:client_log","_t":1789312727611,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"led\":0}"]}
+{"_e":"metro:client_log","_t":1789312727930,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"led\":1}"]}
+{"_e":"metro:client_log","_t":1789312728562,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"led\":1}"]}
+{"_e":"metro:client_log","_t":1789312769142,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1789312770063,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1789312771026,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1789312771408,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1789312771723,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1789312777179,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1789312778281,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1789312779520,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1789312811925,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1789312814654,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1789312816101,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1789312877185,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"led\":1}"]}
+{"_e":"metro:client_log","_t":1789312877666,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1789312878238,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1789312878731,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"led\":0}"]}
+{"_e":"metro:client_log","_t":1789313003169,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"led\":1}"]}
+{"_e":"metro:client_log","_t":1789313003932,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"led\":1}"]}
+{"_e":"metro:client_log","_t":1789313029866,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1789313039264,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"led\":1}"]}
+{"_e":"metro:client_log","_t":1789313040074,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1789313044899,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"led\":1}"]}
+{"_e":"metro:client_log","_t":1789313046112,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"led\":1}"]}
+{"_e":"metro:client_log","_t":1789313052815,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1789313053908,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1789313069707,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1789313085086,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1789313086185,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1789313129498,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1789313150396,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"led\":1}"]}
+{"_e":"metro:client_log","_t":1789313152872,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1789313154120,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1789313154798,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"led\":1}"]}
+{"_e":"metro:bundling:started","_t":1789313980062,"id":"a","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1789313980062,"id":"a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1789313980122,"id":"a","total":1,"ms":59.2921}
+{"_e":"metro:client_log","_t":1789313984163,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:client_log","_t":1789313985166,"level":"log","data":["[MQTT] Connected to HiveMQ Broker"]}
+{"_e":"metro:client_log","_t":1789313985295,"level":"log","data":["[MQTT] Subscribed to topic: smartfarm_dung/data"]}
+{"_e":"metro:client_log","_t":1789313998207,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1789314006305,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1789314006824,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"led\":1}"]}
+{"_e":"metro:client_log","_t":1789314029150,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"led\":1}"]}
+{"_e":"metro:client_log","_t":1789314056208,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"led\":1}"]}
+{"_e":"metro:client_log","_t":1789314071349,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"led\":1}"]}
+{"_e":"root:init","_t":1789349278973,"format":"v0-jsonl","version":"57.0.22"}
+{"_e":"env:mode","_t":1789349278975,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1789349278996,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1789349279564,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1789349283875,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1789349284590,"level":"warn","data":["Failed to download the latest version of React Native DevTools. Using a fallback version instead. Connect to the internet or check your network settings."]}
+{"_e":"expo:dev-tools-plugin:load","_t":1789349284780,"plugins":[]}
+{"_e":"metro:instantiate","_t":1789349291422,"atlas":false,"workers":3,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1789349320760,"id":"1","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1789349320761,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789349320790,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789349320890,"id":"1","progress":0.04170799444554652,"total":142,"current":29}
+{"_e":"metro:bundling:progress","_t":1789349320990,"id":"1","progress":0.20526447313619325,"total":245,"current":111}
+{"_e":"metro:bundling:progress","_t":1789349321090,"id":"1","progress":0.2729768968564576,"total":356,"current":186}
+{"_e":"metro:bundling:progress","_t":1789349321197,"id":"1","progress":0.34457717174218483,"total":431,"current":253}
+{"_e":"metro:bundling:progress","_t":1789349321297,"id":"1","progress":0.4508956013933475,"total":484,"current":325}
+{"_e":"metro:bundling:progress","_t":1789349321397,"id":"1","progress":0.7585848074921956,"total":558,"current":486}
+{"_e":"metro:bundling:progress","_t":1789349321497,"id":"1","progress":0.793469822485207,"total":650,"current":579}
+{"_e":"metro:bundling:progress","_t":1789349321597,"id":"1","progress":0.9472682638307806,"total":711,"current":692}
+{"_e":"metro:bundling:done","_t":1789349321699,"id":"1","total":711,"ms":938.1302}
+{"_e":"metro:client_log","_t":1789349343956,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:client_log","_t":1789349346209,"level":"log","data":["[MQTT] Connected to HiveMQ Broker"]}
+{"_e":"metro:client_log","_t":1789349346619,"level":"log","data":["[MQTT] Subscribed to topic: smartfarm_dung/data"]}
+{"_e":"metro:client_log","_t":1789349351459,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1789349376302,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":0}"]}
+{"_e":"metro:client_log","_t":1789349376823,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
+{"_e":"metro:client_log","_t":1789349407363,"level":"log","data":["[MQTT Publish] Published to smartfarm_dung/control: {\"pump\":1}"]}
