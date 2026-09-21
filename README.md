@@ -160,44 +160,52 @@ ESP32 tự động đóng gói dữ liệu cảm biến và trạng thái rơ-le
 
 ```mermaid
 flowchart TD
-    subgraph Inputs ["Tầng Thu Thập & Nhập Liệu"]
-        Sensors["Cảm biến DHT22, Độ ẩm đất, LDR"]
-        Buttons["Nút bấm vật lý - Mode / Up / Down"]
+    %% Custom Styling Classes
+    classDef inputStyle fill:#2563eb,stroke:#1d4ed8,stroke-width:2px,color:#ffffff;
+    classDef taskStyle fill:#7c3aed,stroke:#5b21b6,stroke-width:2px,color:#ffffff;
+    classDef outputStyle fill:#e11d48,stroke:#be123c,stroke-width:2px,color:#ffffff;
+    classDef cloudStyle fill:#059669,stroke:#047857,stroke-width:2px,color:#ffffff;
+    classDef clientStyle fill:#0284c7,stroke:#0369a1,stroke-width:2px,color:#ffffff;
+
+    subgraph L1 ["1. TẦNG CẢM BIẾN & NHẬP LIỆU"]
+        Sensors["🌡️ Cảm biến (DHT22, Soil, LDR)"]:::inputStyle
+        Buttons["🔘 Nút bấm vật lý (Mode / Up / Down)"]:::inputStyle
     end
 
-    subgraph Controller ["ESP32 Nhúng Đa Nhiệm - FreeRTOS"]
-        tSensors["TaskSensorsAndLogic<br>Đọc & Tự động so sánh ngưỡng"]
-        tButtons["TaskButtons<br>Xử lý phím bấm vật lý"]
-        tLCD["TaskLCD<br>Cập nhật giao diện màn hình TFT"]
-        tWeb["TaskWebServer<br>Phục vụ Web AP 192.168.4.1"]
-        tMQTT["TaskMQTT<br>Truyền nhận MQTT trên Lõi 0"]
+    subgraph L2 ["2. TẦNG XỬ LÝ ESP32 (FREERTOS TASKS)"]
+        tSensors["TaskSensorsAndLogic<br/>Đọc cảm biến & Xử lý tự động"]:::taskStyle
+        tButtons["TaskButtons<br/>Quét nút bấm (20ms)"]:::taskStyle
+        tLCD["TaskLCD<br/>Hiển thị màn hình TFT ST7789"]:::taskStyle
+        tMQTT["TaskMQTT<br/>Truyền nhận MQTT (Lõi 0)"]:::taskStyle
+        tWeb["TaskWebServer<br/>Web Server Cục bộ (Lõi 1)"]:::taskStyle
     end
 
-    subgraph MQTTCloud ["Mạng Truyền Thông MQTT"]
-        Broker[("HiveMQ MQTT Broker<br>broker.hivemq.com")]
+    subgraph L3 ["3. TẦNG CHẤP HÀNH & KẾT NỐI TRUNG TRẠM"]
+        Actuators["🔌 Cơ cấu chấp hành<br/>(Bơm, Đèn LED, Buzzer)"]:::outputStyle
+        Broker[("🌐 HiveMQ MQTT Broker<br/>broker.hivemq.com")]:::cloudStyle
+        LocalAP["📶 Mạng Wi-Fi AP<br/>SmartFarm_Dung"]:::cloudStyle
     end
 
-    subgraph Client ["Tầng Giao Diện Người Dùng"]
-        MobileApp["Ứng dụng Mobile Android<br>React Native Expo"]
-        LocalWeb["Trình duyệt Web Cục bộ<br>192.168.4.1"]
+    subgraph L4 ["4. TẦNG ỨNG DỤNG NGƯỜI DÙNG"]
+        MobileApp["📱 App Mobile Android<br/>(React Native Expo)"]:::clientStyle
+        LocalWeb["💻 Web Cục bộ<br/>(192.168.4.1)"]:::clientStyle
     end
 
-    Sensors -->|"Đọc số liệu mỗi 1s"| tSensors
-    Buttons -->|"Quét phím mỗi 20ms"| tButtons
+    %% Luồng 1: Cảm biến -> Logic -> Chấp hành & MQTT (Đi thẳng xuống)
+    Sensors -->|"Đọc số liệu (1s)"| tSensors
+    tSensors -->|"Tự động bật/tắt"| Actuators
+    tSensors -->|"Chuyển dữ liệu đo"| tMQTT
+    tMQTT <-->|"Publish / Subscribe"| Broker
+    Broker <-->|"MQTT WebSocket"| MobileApp
 
-    tButtons -->|"Cập nhật chuyển chế độ & Ngưỡng"| tLCD
-    tSensors -->|"Đưa dữ liệu đo đạc"| tLCD
-    tSensors -->|"Kích hoạt Rơ-le / Còi"| Actuators["Cơ cấu chấp hành - Bơm, Đèn, Buzzer"]
+    %% Luồng 2: Nút bấm -> TaskButtons -> TaskLCD (Đi thẳng xuống)
+    Buttons -->|"Quét phím (20ms)"| tButtons
+    tButtons -->|"Đổi Mode / Ngưỡng"| tLCD
+    tSensors -->|"Gửi dữ liệu hiển thị"| tLCD
 
-    tWeb <-->|"Kết nối HTTP Offline"| LocalWeb
-
-    tSensors -->|"Đưa dữ liệu đo đạc"| tMQTT
-    tMQTT -->|"Publish: smartfarm_dung/data"| Broker
-    Broker -->|"Subscribe data"| MobileApp
-
-    MobileApp -->|"Publish lệnh: smartfarm_dung/control"| Broker
-    Broker -->|"Receive control payload"| tMQTT
-    tMQTT -->|"Điều khiển lập tức"| Actuators
+    %% Luồng 3: Web Server -> Wi-Fi AP -> Local Web (Đi thẳng xuống)
+    tWeb <-->|"Phục vụ HTTP"| LocalAP
+    LocalAP <-->|"Truy cập Cục bộ"| LocalWeb
 ```
 
 ---
