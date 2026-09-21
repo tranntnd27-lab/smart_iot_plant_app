@@ -69,23 +69,23 @@ graph TD
     AMS -->|"Cấp nguồn 3.3V"| MCU
 
     subgraph Inputs ["KHỐI CẢM BIẾN VÀ NHẬP LIỆU"]
-        DHT["Cảm biến DHT22 - Nhiệt độ và Độ ẩm khí"]:::input
-        Soil["Cảm biến Độ ẩm đất - Soil Moisture"]:::input
-        LDR["Cảm biến ánh sáng - Quang trở LDR"]:::input
-        Btns["Cụm 3 nút nhấn vật lý - Mode / Up / Down"]:::input
+        DHT["Cảm biến DHT22<br/>Nhiệt độ & Độ ẩm khí"]:::input
+        Soil["Cảm biến Độ ẩm đất<br/>Soil Moisture"]:::input
+        LDR["Cảm biến ánh sáng<br/>Quang trở LDR"]:::input
+        Btns["Cụm 3 nút nhấn vật lý<br/>Mode / Up / Down"]:::input
     end
 
     subgraph Outputs ["KHỐI CHẤP HÀNH VÀ HIỂN THỊ"]
-        Pump["Rơ-le máy bơm - GPIO 25"]:::output
-        LED["Rơ-le đèn LED - GPIO 17"]:::output
-        Buzzer["Còi báo động Buzzer - GPIO 12"]:::output
-        LCD["Màn hình LCD màu TFT ST7789 SPI"]:::output
+        Pump["Rơ-le máy bơm<br/>GPIO 25"]:::output
+        LED["Rơ-le đèn LED<br/>GPIO 17"]:::output
+        Buzzer["Còi báo động Buzzer<br/>GPIO 12"]:::output
+        LCD["Màn hình LCD màu<br/>TFT ST7789 SPI"]:::output
     end
 
     subgraph Connectivity ["KHỐI TRUYỀN THÔNG MQTT"]
-        WiFi["Wi-Fi STA Router / AP Mode"]:::comm
-        Broker["HiveMQ MQTT Broker - broker.hivemq.com"]:::comm
-        App["Ứng dụng di động Android - React Native Expo"]:::comm
+        WiFi["Wi-Fi STA Router<br/>AP Mode"]:::comm
+        Broker["HiveMQ MQTT Broker<br/>broker.hivemq.com"]:::comm
+        App["App Mobile Android<br/>React Native Expo"]:::comm
 
         WiFi <-->|"Publish / Subscribe"| Broker
         Broker <-->|"MQTT Over WebSocket"| App
@@ -162,30 +162,30 @@ ESP32 tự động đóng gói dữ liệu cảm biến và trạng thái rơ-le
 flowchart TD
     subgraph L1 ["1. TẦNG CẢM BIẾN VÀ NHẬP LIỆU"]
         Sensors["Cảm biến DHT22, Soil, LDR"]
-        Buttons["Nút bấm vật lý - Mode / Up / Down"]
+        Buttons["Phím cứng Mode / Up / Down"]
     end
 
     subgraph L2 ["2. TẦNG XỬ LÝ ESP32 FREERTOS TASKS"]
-        tSensors["TaskSensorsAndLogic - Đọc cảm biến và Logic tự động"]
-        tButtons["TaskButtons - Quét nút bấm 20ms"]
-        tLCD["TaskLCD - Hiển thị màn hình TFT ST7789"]
-        tMQTT["TaskMQTT - Truyền nhận MQTT Lõi 0"]
-        tWeb["TaskWebServer - Web Server Cục bộ Lõi 1"]
+        tSensors["TaskSensorsAndLogic<br/>Đọc cảm biến & Logic tự động"]
+        tButtons["TaskButtons<br/>Quét phím 20ms"]
+        tLCD["TaskLCD<br/>Hiển thị màn hình TFT ST7789"]
+        tMQTT["TaskMQTT<br/>Truyền nhận MQTT (Lõi 0)"]
+        tWeb["TaskWebServer<br/>Web Server Cục bộ (Lõi 1)"]
     end
 
     subgraph L3 ["3. TẦNG CHẤP HÀNH VÀ KẾT NỐI TRUNG TRẠM"]
-        Actuators["Cơ cấu chấp hành - Bơm, Đèn LED, Buzzer"]
-        Broker["HiveMQ MQTT Broker - broker.hivemq.com"]
-        LocalAP["Mạng Wi-Fi AP - SmartFarm_Dung"]
+        Actuators["Cơ cấu chấp hành<br/>Bơm, Đèn LED, Buzzer"]
+        Broker["HiveMQ MQTT Broker<br/>broker.hivemq.com"]
+        LocalAP["Mạng Wi-Fi AP<br/>SmartFarm_Dung"]
     end
 
     subgraph L4 ["4. TẦNG ỨNG DỤNG NGƯỜI DÙNG"]
-        MobileApp["App Mobile Android - React Native Expo"]
-        LocalWeb["Trình duyệt Web Cục bộ - 192.168.4.1"]
+        MobileApp["App Mobile Android<br/>React Native Expo"]
+        LocalWeb["Trình duyệt Web Cục bộ<br/>192.168.4.1"]
     end
 
     Sensors -->|"Đọc số liệu 1s"| tSensors
-    tSensors -->|"Tự động bật tắt"| Actuators
+    tSensors -->|"Tự động bật/tắt"| Actuators
     tSensors -->|"Chuyển dữ liệu đo"| tMQTT
     tMQTT <-->|"Publish / Subscribe"| Broker
     Broker <-->|"MQTT WebSocket"| MobileApp
