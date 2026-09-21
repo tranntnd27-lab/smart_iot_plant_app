@@ -722,7 +722,7 @@ void setup() {
   Serial.print("AP IP Address: ");
   Serial.println(WiFi.softAPIP());
 
-  WiFi.begin("test123","12345678");
+  WiFi.begin("ThHang","30044003");
   Serial.print("Connecting to WiFi Router...");
   int wifiRetry = 0;
   while (WiFi.status() != WL_CONNECTED && wifiRetry < 20) {
